@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_string_tab.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gekang <gekang@student.42.fr>              +#+  +:+       +#+        */
+/*   By: gekang <gekang@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/21 18:33:20 by gekang            #+#    #+#             */
-/*   Updated: 2020/07/21 20:08:24 by gekang           ###   ########.fr       */
+/*   Updated: 2020/07/22 11:15:19 by gekang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,14 @@ void			ft_sort_str(char **tab, int size)
 	int			j;
 
 	i = 0;
-	while (i < size - 1)
+	while (i < size)
 	{
 		j = i + 1;
-		while (j < size - 1)
+		while (j < size)
 		{
 			if (ft_strcmp(tab[i], tab[j]) > 0)
 			{
 				ft_swap(&tab[i], &tab[j]);
-				continue;
 			}
 			j++;
 		}
